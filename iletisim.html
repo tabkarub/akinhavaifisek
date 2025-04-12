@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <button class="mobile-menu-btn">☰</button>
+    <div class="navbar" id="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Kapalı Logo" class="navbar-logo closed-logo">
+            <img src="logo-open.gif" alt="Açık Logo" class="navbar-logo open-logo">
+        </div>
+        <a href="index.html"><i class="fas fa-home"></i><span> Anasayfa</span></a>
+        <a href="hakkimizda.html"><i class="fas fa-info-circle"></i><span> Hakkımızda</span></a>
+        <div class="dropdown">
+            <a href="uzmanliklar.html" class="dropbtn"><i class="fas fa-box"></i><span> Ürünler</span></a>
+            <div class="dropdown-content">
+                <a href="#"><i class="fas fa-fire"></i> Havai Fişek</a>
+                <a href="#"><i class="fas fa-mountain"></i> Volkan-Şelale</a>
+                <a href="#"><i class="fas fa-star"></i> Konfeti</a>
+                <a href="#"><i class="fas fa-cloud"></i> Sis Makinesi</a>
+                <a href="#"><i class="fas fa-wind"></i> JO2 Jet</a>
+                <a href="#"><i class="fas fa-fire-alt"></i> Alev Makinesi</a>
+                <a href="#"><i class="fas fa-snowflake"></i> Kuru Buz</a>
+                <a href="#"><i class="fas fa-circle"></i> Balon</a>
+            </div>
+        </div>
+        <a href="iletisim.html"><i class="fas fa-envelope"></i><span> İletişim</span></a>
+        <div class="dropdown">
+            <a href="forum.html" class="dropbtn"><i class="fas fa-comments"></i><span> Forum</span></a>
+            <div class="dropdown-content">
+                <a href="forum.html"><i class="fas fa-comment"></i> Forum 1</a>
+                <a href="forum.html"><i class="fas fa-comment"></i> Forum 2</a>
+                <a href="forum.html"><i class="fas fa-comment"></i> Forum 3</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="mobile-menu-btn" onclick="toggleNav()">&#9776;</button>
+
+    <div id="main">
+        <h1>İletişim</h1>
+        <div class="content">
+            <div class="contact-info">
+                <h2>Bize Ulaşın</h2>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Adres: İstanbul, Bakırköy</li>
+                    <li><i class="fas fa-phone"></i> Telefon: <a href="tel:05523910092">0552 391 00 92</a></li>
+                    <li><i class="fas fa-envelope"></i> E-posta: <a href="mailto:info@firmamiz.com">info@firmamiz.com</a></li>
+                </ul>
+            </div>
+
+            <div class="map-container">
+                <h2>Konum</h2>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.123456789012!2d28.87654321!3d40.98765432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zQmFrxLFrw7Z5LCDEsHN0YW5idWw!5e0!3m2!1str!2str!4v1234567890!5m2!1str!2str" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
